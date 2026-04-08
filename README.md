@@ -13,7 +13,7 @@ While standard tools like Nmap are heavy and noisy, this utility provides a stea
 ## Installation
 
 ```bash
-git clone [https://github.com/yourusername/subnet-discovery.git](https://github.com/yourusername/subnet-discovery.git)
+git clone [https://github.com/anthony-rizzo-cs/NetScan.git](https://github.com/anthony-rizzo-cs/NetScan.git)
 cd subnet-discovery
 pip install scapy
 
@@ -23,10 +23,10 @@ Usage
 Note: Because this tool crafts custom Ethernet frames, it must be run with elevated privileges (sudo on Linux/macOS, or as Administrator on Windows).
 
 Standard Human-Readable Output:
-sudo python subnet_discovery.py --target 192.168.1.0/24
+sudo python NetScan.py --target 192.168.1.0/24
 
 JSON Output for Pipelines:
-sudo python subnet_discovery.py -t 10.10.10.0/24 --json > live_hosts.json
+sudo python NetScan.py -t 10.10.10.0/24 --json > live_hosts.json
 
 Available Arguments
 
